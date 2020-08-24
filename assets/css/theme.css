@@ -1,0 +1,92 @@
+/* Style the header */
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Color Themes */
+.light-yellow {
+  --background-color: #f7e8a4;
+  --font-color: #000000;
+}
+
+.dark-blue {
+  --background-color: #172A3A;
+  --font-color: #eee;
+}
+
+.almond {
+  --background-color: #d9c5b2;
+  --font-color: #000000;
+}
+
+.green {
+  --background-color: #04A777;
+  --font-color: #f5efef;
+}
+
+/* Color Choice */
+.color-choice {
+  height: 30px;
+  width: 30px;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.color-choice:hover {
+  opacity: 0.5;
+}
+
+.color-theme-container {
+  background-color: white;
+  border: 2px solid #1f1e1e;
+  padding: 25px 10px 5px;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Theming</title>
+        <link rel="stylesheet" href="./assets/css/theme.css">
+    </head>
+    <body x-data="theme()" :class="themeClass">
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+        <script src="assets/js/theme.js"></script>
+
+
+        <div class="header">
+            <h1>My Simple Theme</h1>
+            <div>
+                <span class="color-theme-container">
+                    <template x-for="(ct, index) in colorThemes" :key="index">
+                        <span x-bind:class="choiceClass(ct)" @click="changeTheme(ct)"></span>
+                    </template>
+                </span>
+            </div>
+        </div>
+        
+        <div class="topnav">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+        
+        <div class="row">
+            <div class="column">
+              <h2>Column</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+            
+            <div class="column">
+              <h2>Column</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+            
+            <div class="column">
+              <h2>Column</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+
+        </div>  
+    </body>
+</html>
