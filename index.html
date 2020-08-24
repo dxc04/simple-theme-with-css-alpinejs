@@ -13,7 +13,7 @@
             <div>
                 <span class="color-theme-container">
                     <template x-for="(ct, index) in colorThemes" :key="index">
-                        <span x-bind:class="choiceClass(ct)" @click="changeTheme(ct)"></span>
+                        <span :class="choiceClass(ct)" @click="changeTheme(ct)"></span>
                     </template>
                 </span>
             </div>
